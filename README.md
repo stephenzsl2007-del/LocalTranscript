@@ -2,6 +2,14 @@
 
 原生 macOS 离线麦克风听写与上下文润色。SwiftUI 聊天式界面，AVAudioEngine 连续采集，whisper.cpp 使用 Apple Silicon Metal/Accelerate 推理；润色与上下文命名通过本机 Ollama 完成。
 
+## 演示
+
+![LocalTranscript：选择上下文、持续听写、查看润色结果与原文](docs/demo.gif)
+
+选择“会议记录”上下文 → 文字逐步出现 → 停止定稿 → 查看润色结果 → 切换原文。
+
+使用应用的真实 SwiftUI 界面和预置示例文本演示流程；播放节奏不代表实际推理速度。
+
 ## 快速开始
 
 要求：Apple Silicon Mac、macOS 14+、Xcode 或 Command Line Tools、CMake。润色另需安装 [Ollama](https://ollama.com/download/mac)。建议 16GB 或更多内存。
